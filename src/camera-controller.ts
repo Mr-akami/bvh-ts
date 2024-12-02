@@ -3,8 +3,8 @@ import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 
 export class CameraController {
-  public camera: THREE.PerspectiveCamera;
-  public controls: OrbitControls;
+  public readonly camera: THREE.PerspectiveCamera;
+  public readonly controls: OrbitControls;
 
   constructor(domElement: HTMLElement) {
     this.camera = new THREE.PerspectiveCamera(

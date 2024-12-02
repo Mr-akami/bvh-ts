@@ -1,11 +1,9 @@
 import "./style.css";
-import typescriptLogo from "./typescript.svg";
-import viteLogo from "/vite.svg";
-import { setupCounter } from "./counter.ts";
 import * as THREE from "three";
 import { CameraController } from "./camera-controller.ts";
 import { Box } from "./box.ts";
 import { SceneController } from "./scene-controller.ts";
+import { setupTweakPane } from "./tweakpane.ts";
 
 // main.ts
 // gl canvas init
@@ -21,6 +19,8 @@ import { SceneController } from "./scene-controller.ts";
 // xxxobject.ts
 // use scene
 // expose init
+
+setupTweakPane();
 
 const renderer = new THREE.WebGLRenderer();
 renderer.setSize(window.innerWidth, window.innerHeight);
