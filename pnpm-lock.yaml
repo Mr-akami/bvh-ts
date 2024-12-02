@@ -21,6 +21,9 @@ importers:
       '@types/three':
         specifier: ^0.170.0
         version: 0.170.0
+      bunshi:
+        specifier: ^2.1.5
+        version: 2.1.5
       three:
         specifier: ^0.170.0
         version: 0.170.0
@@ -288,6 +291,18 @@ packages:
   '@webgpu/types@0.1.51':
     resolution: {integrity: sha512-ktR3u64NPjwIViNCck+z9QeyN0iPkQCUOQ07ZCV1RzlkfP+olLTeEZ95O1QHS+v4w9vJeY9xj/uJuSphsHy5rQ==}
 
+  bunshi@2.1.5:
+    resolution: {integrity: sha512-zO+qxwd2aBV+XUIf7LjL1G3lx5CtvbtXZD+WMkM9KD+RN0iFtitDVX2QDu/wzdQIj8hyXJlGDfVEfeoqhAVEfA==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      react: '>=16'
+      vue: '>=3'
+    peerDependenciesMeta:
+      react:
+        optional: true
+      vue:
+        optional: true
+
   esbuild@0.24.0:
     resolution: {integrity: sha512-FuLPevChGDshgSicjisSooU0cemp/sGXR841D5LHMB7mTVOmsEHcAxaH3irL53+8YDIeVNQEySh4DaYU/iuPqQ==}
     engines: {node: '>=18'}
@@ -536,6 +551,8 @@ snapshots:
   '@types/webxr@0.5.20': {}
 
   '@webgpu/types@0.1.51': {}
+
+  bunshi@2.1.5: {}
 
   esbuild@0.24.0:
     optionalDependencies:
