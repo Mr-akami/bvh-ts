@@ -16,4 +16,8 @@ export class CameraController {
     this.camera.position.z = 5;
     this.controls = new OrbitControls(this.camera, domElement);
   }
+
+  public updateControl() {
+    this.controls.update();
+  }
 }

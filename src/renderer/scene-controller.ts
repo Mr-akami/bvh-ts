@@ -14,4 +14,8 @@ export class SceneController {
     }
     return SceneController.instance;
   }
+
+  public add(object: THREE.Object3D) {
+    this.scene.add(object);
+  }
 }
