@@ -1,9 +1,11 @@
 import { Box } from "../box";
 import type { RendererController } from "./renderer-controller";
+import { SceneController } from "./scene-controller";
 
 export const drawAndAnimation = (
   rendererController: RendererController
 ): void => {
+  SceneController.getInstance().toggleHelper();
   const box = new Box();
 
   rendererController.getRenderer().setAnimationLoop(animate);
